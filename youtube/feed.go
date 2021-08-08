@@ -155,7 +155,7 @@ func (p *Plugin) removeAllSubsForChannel(channel string) {
 func (p *Plugin) sendNewVidMessage(guild, discordChannel string, channelTitle string, videoID string, mentionEveryone bool) {
 	content := fmt.Sprintf("**%s** uploaded new video about nuggets!\n%s", channelTitle, "https://www.youtube.com/watch?v="+videoID)
 	if mentionEveryone {
-		content += " @dank team"
+		content += " <@&873284738545254440>"
 	}
 
 	parsedChannel, _ := strconv.ParseInt(discordChannel, 10, 64)
